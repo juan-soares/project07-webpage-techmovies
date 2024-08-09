@@ -22,8 +22,8 @@ const updateActiveButton = (button) => {
 
 btnList.forEach((btn, index) => {
   btn.addEventListener("click", () => {
-    updateCoverImage(index);
-    updateSynopses(index);
+    updateActiveCoverImage(index);
+    updateActiveSynopses(index);
     updateActiveButton(btn);
   });
 });
