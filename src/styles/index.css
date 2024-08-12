@@ -31,7 +31,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 .synopses {
@@ -45,7 +45,7 @@
 .synopses h1 {
   font-size: 35px;
   color: #ffffff;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   letter-spacing: 8px;
 }
 
@@ -75,4 +75,40 @@
 
 .buttons .btn--active {
   background-color: #1d8346;
+}
+
+@media (max-width: 768px) {
+  .synopses--active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .synopses h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .synopses p {
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    padding: 40px;
+  }
+
+  .content {
+    height: 60vh;
+    overflow: scroll;
+    gap: 10px;
+  }
+
+  .synopses p {
+    width: 100%;
+  }
 }
